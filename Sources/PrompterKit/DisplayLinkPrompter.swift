@@ -121,7 +121,7 @@ public final class DisplayLinkTeleprompterController {
 
     private let bundleID = "com.displaylink.DisplayLinkUserAgent"
     private let appURL = URL(fileURLWithPath: "/Applications/DisplayLink Manager.app")
-    private let queue = DispatchQueue(label: "com.mikerosoft.prompterkit.displaylink-prompter", qos: .userInitiated)
+    private let queue = DispatchQueue(label: "com.mikecann.prompter-kit.displaylink-prompter", qos: .userInitiated)
 
     public func setEnabled(_ enabled: Bool, completion: @escaping (Result<Void, Error>) -> Void) {
         queue.async { [weak self] in

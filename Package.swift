@@ -1,10 +1,10 @@
 // swift-tools-version: 5.10
 import PackageDescription
 
-// Shared Elgato Prompter helpers for the Swift tools in this repo: finding the
-// prompter display and switching it on through DisplayLink Manager.
+// Standalone Elgato Prompter helpers. Keep the library product and module name
+// stable so existing apps can continue to import PrompterKit.
 let package = Package(
-    name: "PrompterKit",
+    name: "prompter-kit",
     platforms: [
         .macOS(.v13)
     ],
